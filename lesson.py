@@ -1,5 +1,10 @@
-a = "test"
-b = a
-c = b
+num = 1
+name = '1'
+new_num = int(name)
 
-print(c)
+print(new_num, type(new_num))
+
+num = name
+print(num, type(num))
+
+
