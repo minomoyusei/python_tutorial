@@ -1,23 +1,29 @@
-r = [1, 2, 3, 4, 5, 1, 2, 3]
-print(r.index(3, 3))
+i = [1, 2, 3, 4, 5]
+j = i
+j[0] = 100
+print('j = ', j)
+print('i = ', i)
 
-print(r.count(3))
 
-if 5 in r:
-    print('exist')
+x = [1, 2, 3, 4, 5]
+y = x.copy()
+y[0] = 100
+print('y = ', y)
+print('x = ', x)
 
-r.sort()
-print(r)
-r.sort(reverse=True)
-print(r)
-r.reverse()
-print(r)
+X = 10
+Y = X
+print(id(Y))
+Y = 5
+print(Y)
+print(X)
+print(id(X))
+print(id(Y))
 
-s = 'My name is Mike.'
-to_split = s.split(' ')
-print(to_split)
-
-x = ' '.join(to_split)
-print(x)
-
-print(help(list))
+X = ['a', 'b']
+Y = X
+Y[0] = 'p'
+print(id(X))
+print(id(Y))
+print(Y)
+print(X)
