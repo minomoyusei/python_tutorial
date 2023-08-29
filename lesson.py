@@ -1,33 +1,26 @@
-t = (1, 2, 3, 4, 1, 2)
-print(t)
-print(type(t))
-print(t[-1])
-print(t.index(1))
-print(t.index(1,1))
-print(t.count(1))
-print(help(list))
-print(help(tuple))
+num_tuple = (10, 20)
+print(num_tuple)
 
-t = ([1, 2, 3], [4, 5, 6])
-print(t)
-t[0][0] = 100
-print(t)
+x, y = num_tuple
+print(x, y)
 
-t = 1, 2, 3
-print(t)
-t = 1,
-print(t)
-print(type(t))
+x, y = 10, 20 #タプルのアンパッキング
+print(x, y)
 
-t = ()
-print(t)
-print(type(t))
+min, max = 0, 100
+print(min, max)
 
-t = (1)
-print(t)
-print(type(t))
+a, b, c, d, e, f = 'Mike', '1', '1', '1', 'e', 'f'
+a = 'Mike'
+b = '1'
 
-new_tuple = (1, 2, 3) + (4, 5, 6)
-print(new_tuple)
-new_tuple = (1,) + (4, 5, 6)
-print(new_tuple)
+i = 10
+j = 20
+tmp = i
+i = j
+j = tmp
+print(i, j)
+a = 100
+b = 200
+a, b = b, a
+print(a, b)
