@@ -1,26 +1,8 @@
-num_tuple = (10, 20)
-print(num_tuple)
+chose_from_two = ('A', 'B', 'C')
 
-x, y = num_tuple
-print(x, y)
+answer = []
+answer.append('A')
+answer.append('A')
 
-x, y = 10, 20 #タプルのアンパッキング
-print(x, y)
-
-min, max = 0, 100
-print(min, max)
-
-a, b, c, d, e, f = 'Mike', '1', '1', '1', 'e', 'f'
-a = 'Mike'
-b = '1'
-
-i = 10
-j = 20
-tmp = i
-i = j
-j = tmp
-print(i, j)
-a = 100
-b = 200
-a, b = b, a
-print(a, b)
+print(chose_from_two)
+print(answer)
