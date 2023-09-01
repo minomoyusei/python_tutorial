@@ -1,14 +1,25 @@
-d = {'x':10, 'y': 20}
+d = {'x': 10, 'y': 20}
+help(d)
+print(d.keys())
+print(d.values())
+d2 = {'x': 1000, 'j': 500}
 print(d)
-print(type(d))
+print(d2)
+d.update(d2)
+print(d)
 print(d['x'])
-d['x'] = 100
-print(d['x'])
-d['x'] = 'XXXX'
+print(d.get('x'))
+print(d.get('z'))
+r = d.get('z')
+print(r)
+print(type(r))
+print(d.pop('x'))
 print(d)
-d['z'] = 200
+del d['y']
 print(d)
-d[1] = 10000
+del d
+d = {'a': 100, 'b': 200}
+d.clear()
 print(d)
-print(dict(a=10,b=20))
-dict([('a',10),('b',20)])
+d = {'a': 100, 'b': 200}
+print('a' in d)
