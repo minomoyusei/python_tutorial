@@ -1,13 +1,12 @@
-l = [
-    ['apple', 100],
-    ['banana', 200],
-    ['orange', 300],
-    ]
+a = {1, 2, 2, 3, 4, 4, 4, 5, 6}
+print(a)
+print(type(a))
 
-fruits = {
-    'apple': 100,
-    'banana': 200,
-    'orange': 300,
-}
+b = {2, 3, 3, 6, 7}
+print(b)
 
-print(fruits['apple'])
+print(a - b)
+print(b - a)
+print(a & b)
+print(a | b)
+print(a ^ b)
